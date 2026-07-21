@@ -1,0 +1,433 @@
+/* Reset básico e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #2d2d2d;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #16213e;
+    padding: 15px;
+}
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    color: #e94560;
+}
+
+/* Lista de habilidades */
+aside ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #1a1a2e;
+    padding-bottom: 10px;
+}
+
+.titulo-com-botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #e94560;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.titulo-com-botao h2 {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+/* Foto de perfil */
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e94560;
+}
+
+
+/* Botão CTA */
+button {
+    background-color: #e94560;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #c73650;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #16213e;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.perfil-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#bloco-citacao {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#bloco-citacao h3 {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#citacao {
+    font-style: italic;
+    color: #ffffff;
+}
+
+#autor-citacao {
+    color: #e94560;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Header simplificado das páginas internas */
+.header-simples {
+    padding: 20px;
+}
+
+.header-simples h1 {
+    margin-bottom: 15px;
+}
+
+/* Botão-link (CTA como <a>) */
+.botao {
+    display: inline-block;
+    background-color: #e94560;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.botao:hover {
+    background-color: #c73650;
+}
+
+/* Cards de projeto (agora são links) */
+.card-projeto {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s;
+}
+
+.card-projeto:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-projeto h3 {
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+.voltar {
+    display: inline-block;
+    color: #e94560;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Card de clima */
+#card-clima {
+    background-color: #ffffff;
+    color: #2d2d2d;
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 220px;
+    text-align: left;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#cidade-clima {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tempo-agora {
+    color: #666666;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+#temperatura-clima {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#condicao-clima {
+    color: #666666;
+    display: inline-block;
+    margin-left: 10px;
+}
+/* Container do banner de habilidades */
+.banner-habilidades {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.banner-habilidades h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Alinha os itens em linha e centraliza */
+.lista-habilidades {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+}
+
+/* Estilo de "pílula" para cada habilidade */
+.lista-habilidades li {
+    background-color: #16213e;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #e94560;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Efeito legal ao passar o mouse */
+.lista-habilidades li:hover {
+    background-color: #e94560;
+    transform: translateY(-3px);
+}
+/* Estilização geral do rodapé */
+footer {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    margin-top: 40px;
+}
+
+#contato-info {
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+#contato-info h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #e94560;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#contato-info p {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contato-info address {
+    font-style: normal;
+    font-size: 14px;
+}
+
+#contato-info address a {
+    color: #e94560;
+    text-decoration: none;
+}
+
+#contato-info address a:hover {
+    text-decoration: underline;
+}
+
+/* Container do formulário em formato de Card */
+.container-formulario {
+    background-color: #16213e;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+/* Ajuste do formulário */
+form#contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+form label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+form input, 
+form textarea {
+    padding: 10px;
+    border: 1px solid #2a3a5e;
+    border-radius: 6px;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+}
+
+form input:focus, 
+form textarea:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+form textarea {
+    resize: vertical;
+    max-height: 120px;
+}
+
+/* Botão de envio moderno */
+form input[type="submit"] {
+    background-color: #e94560;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    margin-top: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c73650;
+}
+
+/* Rodapé final */
+.direitos {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #888888;
+}

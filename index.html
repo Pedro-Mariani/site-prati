@@ -4,66 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Henrique</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header> 
-<h1>Pedro Henrique</h1>
-
-
-<nav>
-<ul>
-    <li><a href="#sobre-mim">Sobre mim</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#contato">Contato</a></li>
-</ul>
-
-
-</nav>
-
-</header>
-
-<section id="sobre-mim">
-<h2>Sobre mim</h2>
-<img src= alt="imagem de perfil de Pedro Henrique"  title="foto de perfil">
-<article>
-    <p>Olá! Meu nome é Pedro Henrique e sou um desenvolvedor web.</p>
-</article>
-
-<aside>
-    <h3>Habilidades</h3>
-    <ul>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-       
-    </ul>
-</aside>
-
-<section id ="projetos">   
-    <h2>Projetos</h2>
-
-    <article> 
-        <h3>Portiforio</h3>
-
-        <p>Este é o meu portifolio pessoal, onde apresento meus projetos e habilidades como desenvolvedor web.</p>
-    </article>
-
-  
-</section>
-
-  <footer>
-        <p>Direito reservados a Pedro</p>
-   
-        <section id="contato">   
+        <h1>Pedro Henrique</h1>
+        <div id="card-clima">
+            <p id="cidade-clima"></p>
+            <p class="tempo-agora">Tempo agora</p>
+            <p id="temperatura-clima"></p>
+            <p id="condicao-clima"></p>
+        </div>
+        <div id="bloco-citacao">
+            <h3>Frase do dia</h3>
+            <p id="citacao"></p>
+            <p id="autor-citacao"></p>
+        </div>
+ 
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section id="sobre-mim">
+        <div class="titulo-com-botao">
+            <h2>Sobre mim</h2>
+            <button id="botao-conheca">conheca meu trabalho!</button>
+        </div>
+        <div class="perfil-info">
+            <img src="fotodeperfil.jpeg" title="foto de perfil" class="foto">
+            <div>
+                <p><strong>Nome:</strong> Pedro Henrique</p>
+                <p><strong>Idade:</strong> 33 anos</p>
+                <p><strong>Estudando:</strong> Análise e Desenvolvimento de Sistemas, AWS Cloud, Desenvolvimento Web, consumo de APIs, JavaScript, CSS, HTML</p>
+            </div>
+        </div>
+ 
+        <article>
+            <p>Olá! Meu nome é Pedro Henrique e sou um desenvolvedor web em aprendizado. Moro em Torres, Rio Grande do Sul, e estou em busca de oportunidades para aplicar meus conhecimentos e crescer profissionalmente. 
+            Estou querendo aprender mais sobre desenvolvimento web, consumo de APIs, cloud computing e outras tecnologias relacionadas. Sou apaixonado por tecnologia e estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades.</p>
+        </article>
+ 
+        <!-- Banner horizontal de habilidades -->
+        <div class="banner-habilidades">
+            <h3>Habilidades</h3>
+            <ul class="lista-habilidades">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>Cloud</li>
+            </ul>
+        </div>
+    </section>
+ 
+    <footer>
+        <section id="contato-info">   
             <h2>Contato</h2>
             <p>Tem algum projeto em mente ou quer saber mais sobre mim? Entre em contato!</p>
-            <adress>
-               Email: <a href="mailto:pedromariani@gmail.com">pedromariani@gmail.com</a><br>
-                    telefone:<a href="tel:(51) 981296279">(51) 981296279</a>
-                    </adress>
-        </section>>
+            <address>
+                Email: <a href="mailto:pedromariani@gmail.com">pedromariani@gmail.com</a><br>
+                Telefone: <a href="tel:51981296279">(51) 981296279</a>
+            </address>
+        </section>
    
+        <div class="container-formulario">
+            <form id="contato">
+                <div class="grupo-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
+                </div>
+                
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </div>
+
+        <p class="direitos">Direitos reservados a Pedro</p>
     </footer>
+
+    <script src="acao.js"></script>
 </body>
 </html>
